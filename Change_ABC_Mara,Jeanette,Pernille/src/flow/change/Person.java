@@ -12,12 +12,12 @@ package flow.change;
 public class Person
 {
     private int readyCash;
-    private int highScore;
+    private int score;
     private String username;
 
     public Person(int highScore, String username)
     {
-        this.highScore = highScore;
+        this.score = highScore;
         this.username = username;
     }
 
@@ -33,12 +33,12 @@ public class Person
 
     public int getHighScore()
     {
-        return highScore;
+        return score;
     }
 
     public void setHighScore(int highScore)
     {
-        this.highScore = highScore;
+        this.score = highScore;
     }
 
     public String getUsername()
@@ -54,7 +54,7 @@ public class Person
     @Override
     public String toString()
     {
-        return "Person{" + "highScore=" + highScore + ", username=" + username + '}';
+        return "Person{" + "highScore=" + score + ", username=" + username + '}';
     }
        
 }
