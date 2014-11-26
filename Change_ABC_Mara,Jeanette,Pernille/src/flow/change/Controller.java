@@ -11,13 +11,6 @@ package flow.change;
  */
 public class Controller implements Interface
 {
-
-    @Override
-    public void travel()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public void buyDrugs()
     {
@@ -38,6 +31,12 @@ public class Controller implements Interface
 
     @Override
     public void sellDrugs()
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void travel(int days)
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

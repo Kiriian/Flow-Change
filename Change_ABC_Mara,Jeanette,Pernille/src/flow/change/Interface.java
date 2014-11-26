@@ -11,17 +11,21 @@ package flow.change;
  */
 public interface Interface
 {
-    void travel();
+    // metode til at ændre GUI og som tæller dagene.
+    void travel(int days);
     
-    //void avaliability();
+    // metode til at udregne den endelige prise for en pakke af både heroin eller cocain 
+    int CalculateFinalPrice();
     
+    //her bliver total prisen udregnet og trukket fra persones konto
     void buyDrugs();
     
+    //her bliver total prisen udregnet og tilføjet til persones konto
     void sellDrugs();
     
-    //void priceFinal();
-    
+    //
     boolean load(String filename);
     
+    // 
     boolean save(String filename);
 }
