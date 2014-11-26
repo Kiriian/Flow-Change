@@ -15,9 +15,9 @@ public class Person
     private int score;
     private String username;
 
-    public Person(int highScore, String username)
+    public Person(String username, int score)
     {
-        this.score = highScore;
+        this.score = score;
         this.username = username;
     }
 
