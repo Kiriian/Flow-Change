@@ -7,7 +7,7 @@ package flow.change;
 
 /**
  *
- * @author Jeanette
+ * @author Jeanette, Marta og Pernille
  */
 public class FlowChange
 {
