@@ -2,11 +2,14 @@
 package Views;
 
 import Interface.ChangeInterface;
+import Model.Drugs;
 import flow.change.Controller;
+import java.util.ArrayList;
 public class MainGUI extends javax.swing.JFrame
 {
 
     private ChangeInterface changeInterface;
+    private ArrayList<Drugs> drugArray;
     
     public MainGUI()
     {
@@ -22,8 +25,7 @@ public class MainGUI extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jTabbedPane1 = new javax.swing.JTabbedPane();
@@ -116,10 +118,8 @@ public class MainGUI extends javax.swing.JFrame
         jLabel2.setText("Availiable Money:");
 
         jButton1.setText("Travle");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
@@ -247,19 +247,15 @@ public class MainGUI extends javax.swing.JFrame
         Buy.setText("buy");
 
         Travel.setText("Travle");
-        Travel.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Travel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TravelActionPerformed(evt);
             }
         });
 
         KokainAmount.setText("5");
-        KokainAmount.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        KokainAmount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 KokainAmountActionPerformed(evt);
             }
         });
@@ -273,20 +269,16 @@ public class MainGUI extends javax.swing.JFrame
         jLabel31.setText("Weed");
 
         KokainAmount1.setEnabled(false);
-        KokainAmount1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        KokainAmount1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 KokainAmount1ActionPerformed(evt);
             }
         });
 
-        KokainAmount2.setText("Cocain:");
+        KokainAmount2.setText("Cocain");
         KokainAmount2.setEnabled(false);
-        KokainAmount2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        KokainAmount2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 KokainAmount2ActionPerformed(evt);
             }
         });
@@ -298,7 +290,7 @@ public class MainGUI extends javax.swing.JFrame
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel31)
                             .addComponent(jLabel34)
@@ -342,7 +334,7 @@ public class MainGUI extends javax.swing.JFrame
                                     .addComponent(HeroinPrice, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(KokainPrice, javax.swing.GroupLayout.Alignment.TRAILING))))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(64, 64, 64)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -357,31 +349,27 @@ public class MainGUI extends javax.swing.JFrame
                                             .addComponent(AmphAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(Travel))
-                                .addContainerGap(159, Short.MAX_VALUE))
+                                    .addComponent(Travel)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(38, 38, 38)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(DaysLeft)
-                                    .addComponent(Amount))
-                                .addContainerGap(146, Short.MAX_VALUE))))
+                                    .addComponent(Amount)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(UserName)
-                                .addGap(74, 74, 74)
-                                .addComponent(AvMoney))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(PriceTotal)
-                                .addGap(18, 18, 18)
-                                .addComponent(PriceTotalTal))
-                            .addComponent(Acid)
-                            .addComponent(jLabel28)
-                            .addComponent(Crystal)
-                            .addComponent(Heroin)
-                            .addComponent(Angel)
-                            .addComponent(Amph, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())))
+                        .addComponent(UserName)
+                        .addGap(74, 74, 74)
+                        .addComponent(AvMoney))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(PriceTotal)
+                        .addGap(18, 18, 18)
+                        .addComponent(PriceTotalTal))
+                    .addComponent(Acid)
+                    .addComponent(jLabel28)
+                    .addComponent(Crystal)
+                    .addComponent(Heroin)
+                    .addComponent(Angel)
+                    .addComponent(Amph, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -510,10 +498,8 @@ public class MainGUI extends javax.swing.JFrame
         jTextField3.setText("10");
 
         jButton3.setText("Travle");
-        jButton3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
@@ -641,7 +627,8 @@ public class MainGUI extends javax.swing.JFrame
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
        jTabbedPane1.setSelectedIndex(1);
-       KokainAmount1.setText(changeInterface.getBaseAvailiablity(KokainAmount2.getText()) + "");
+       changeInterface.getBaseAvailiablity(KokainAmount2.getText());
+       KokainAmount1.setText(changeInterface.calculateAvailability(KokainAmount2.getText())+ "");
        changeInterface.travel();
     }//GEN-LAST:event_jButton1ActionPerformed
 

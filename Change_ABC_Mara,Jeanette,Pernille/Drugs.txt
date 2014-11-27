@@ -1,5 +1,5 @@
-Cocaine,1200,30
-heroin,1600,15
+Cocain,1200,30
+Heroin,1600,15
 Amphetamine,200,50
 Acid,550,33
 Angel_Dust,400,60

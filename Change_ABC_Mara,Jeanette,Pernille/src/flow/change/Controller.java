@@ -38,7 +38,7 @@ public class Controller implements ChangeInterface
     @Override
     public boolean load(String filename)
     {
-        drugArray = FileHandler.loadDrugs(filename);
+        drugArray = FileHandler.loadDrugs("Drugs.txt");
 
         if (drugArray == null)
         {
@@ -64,14 +64,14 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public int calculateAvailability()
+    public int calculateAvailability(String drugName)
     {
         adjustAva = random.nextInt(40) + 15;
-        if (adjustAva % 2 == 0)// denne kode tager kun højde for kokain
+        if (adjustAva % 2 == 0)
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) - middelSum;
-            System.out.println("availability" + finalAvailability);
+            System.out.println("availability?" + finalAvailability);
             return finalAvailability;
         } else
         {
@@ -107,7 +107,7 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public int CalculateFinalPrice()
+    public int CalculateFinalPrice(String drugName)
     {
         adjust = random.nextInt(85)+1;
         if (adjust % 2 == 0)// denne kode tager kun højde for kokain
@@ -132,6 +132,7 @@ public class Controller implements ChangeInterface
         {
             if (drugName.equals(i.getDrugName()))
             {
+                System.out.println("Gere");
                 return i.getBaseAvailability();
 
             } else
