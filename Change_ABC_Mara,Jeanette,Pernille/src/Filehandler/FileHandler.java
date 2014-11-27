@@ -36,9 +36,7 @@ public class FileHandler
             String linje = file_scanner.nextLine();
             Scanner sc = new Scanner(linje).useDelimiter(",");
             String username = sc.next();
-           // System.out.println("Q"+question);
             int score = sc.nextInt();
-            //System.out.println("A"+answer);
             Person p = new Person(username, score);
             System.out.println(p);
             highScore.add(p);  //Reading in a single line and saving in the ArrayList
@@ -67,12 +65,9 @@ public class FileHandler
             String drugName = sc.next();
             int basePrice = sc.nextInt();
             int baseAvailiablity = sc.nextInt();
-           // System.out.println("Q"+question);
-            int score = sc.nextInt();
-            //System.out.println("A"+answer);
             Drugs d = new Drugs(drugName, basePrice, baseAvailiablity);
-            System.out.println(d);
             drugArray.add(d);  //Reading in a single line and saving in the ArrayList
+            System.out.println(d.getDrugName());
         }
 
         file_scanner.close();  //Closing the file

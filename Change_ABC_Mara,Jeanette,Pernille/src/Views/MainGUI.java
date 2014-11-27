@@ -11,7 +11,7 @@ public class MainGUI extends javax.swing.JFrame
     public MainGUI()
     {
         changeInterface = new Controller();
-        changeInterface.load(Drugs.txt);
+        changeInterface.load("Drugs.txt");
         initComponents();
     }
 
