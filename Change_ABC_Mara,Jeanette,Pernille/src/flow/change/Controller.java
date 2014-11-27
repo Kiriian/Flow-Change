@@ -27,6 +27,7 @@ public class Controller implements Interface
     private int finalPrice;
     private int middelSumAva;
     private int finalAvailability;
+    private int days;
 
     @Override
     public void buyDrugs()
@@ -85,7 +86,7 @@ public class Controller implements Interface
     @Override
     public void travel()
     {
-       
+       days++;
     }
 
     @Override
@@ -109,7 +110,7 @@ public class Controller implements Interface
     public int CalculateFinalPrice()
     {
         adjust = random.nextInt(85)+1;
-        if (adjustAva % 2 == 0)// denne kode tager kun højde for kokain
+        if (adjust % 2 == 0)// denne kode tager kun højde for kokain
         {
             middelSum = ((adjust * getBasePrice())/ 100);
             finalPrice = getBasePrice() - middelSum;
