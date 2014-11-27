@@ -68,7 +68,6 @@ public class FileHandler
             int basePrice = sc.nextInt();
             int baseAvailiablity = sc.nextInt();
            // System.out.println("Q"+question);
-            int score = sc.nextInt();
             //System.out.println("A"+answer);
             Drugs d = new Drugs(drugName, basePrice, baseAvailiablity);
             System.out.println(d);

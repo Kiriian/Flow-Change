@@ -15,12 +15,12 @@ public interface ChangeInterface
     void travel();
     
     // metode til at beregne den endelige availability af drugs. returnerer antal.
-   int calculateAvailability();
+   int calculateAvailability(String drugName);
    
     int getBasePrice(String drugName);
 
     // metode til at udregne den endelige prise for en pakke af drugs 
-    int CalculateFinalPrice();
+    int CalculateFinalPrice(String drugName);
     
     
     int getBaseAvailiablity(String drugName);

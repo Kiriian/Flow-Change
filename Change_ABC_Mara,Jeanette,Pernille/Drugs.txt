@@ -1,0 +1,9 @@
+Cocaine,1200,30
+Heroin,1200,30
+Amphetamine,200,50
+Acid,200,50
+Angel_dust,400,60
+Chrystal_Meth,800,38
+Hash,180,100
+Weed,150,115
+Mushrooms,120,95

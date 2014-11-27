@@ -53,5 +53,11 @@ public class Drugs
     {
         this.baseAvailability = baseAvailability;
     }
+
+    @Override
+    public String toString() {
+        return "Drugs{" + "drugName=" + drugName + ", basePrice=" + basePrice + ", baseAvailability=" + baseAvailability + '}';
+    }
+    
     
 }
