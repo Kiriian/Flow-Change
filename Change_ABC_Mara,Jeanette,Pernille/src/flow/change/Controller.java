@@ -67,16 +67,20 @@ public class Controller implements ChangeInterface
     public int calculateAvailability(String drugName)
     {
         adjustAva = random.nextInt(40) + 15;
+        System.out.println("adjustAva "+adjustAva);
         if (adjustAva % 2 == 0)
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
-            finalAvailability = getBaseAvailiablity(drugName) - middelSum;
+            finalAvailability = getBaseAvailiablity(drugName) - middelSumAva;
+            System.out.println("middelsum"+middelSumAva);
+                    
             System.out.println("availability?" + finalAvailability);
             return finalAvailability;
         } else
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
-            finalAvailability = getBaseAvailiablity(drugName) + middelSum;
+            finalAvailability = getBaseAvailiablity(drugName) + middelSumAva;
+            System.out.println("middelsum"+middelSumAva);
             System.out.println("availability" + finalAvailability);
             return finalAvailability;
         }
