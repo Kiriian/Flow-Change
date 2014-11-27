@@ -5,6 +5,7 @@
  */
 package flow.change;
 
+import Filehandler.FileHandler;
 import Interface.Interface;
 import java.util.Random;
 import Model.Drugs;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 public class Controller implements Interface
 {
     private Random random = new Random();
-    ArrayList <Drugs> drugArray;
+    private ArrayList <Drugs> drugArray = new ArrayList<>();
     private int adjust;
     private int adjustAva;
     private int middelSum;
@@ -34,13 +35,24 @@ public class Controller implements Interface
     @Override
     public boolean load(String filename)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        drugArray = FileHandler.loadDrugs("Drugs.txt");
+        FileHandler.loadPerson(filename);
+        
+        if (drugArray == null )
+        {
+            return false;
+        } else
+        {
+            return true;
+        }
     }
 
     @Override
     public boolean save(String filename)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        FileHandler.save(null, filename);
+        
+        return true;
     }
 
     @Override

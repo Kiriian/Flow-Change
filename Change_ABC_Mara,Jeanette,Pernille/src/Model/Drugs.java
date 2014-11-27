@@ -16,7 +16,6 @@ public class Drugs
     private String drugName;
     private int basePrice;
     private int baseAvailability;
-    private ArrayList<Drugs> drugArray = new ArrayList<>();
 
     public Drugs(String drugName, int basePrice, int baseAvailability)
     {
@@ -24,22 +23,35 @@ public class Drugs
         this.basePrice = basePrice;
         this.baseAvailability = baseAvailability;
     }
-    public void addDrugs()
+
+    public String getDrugName()
     {
-    drugArray.add(new Drugs("Cocaine", 1200, 30));
-    drugArray.add(new Drugs("herion", 1600, 15));
-    drugArray.add(new Drugs ("amphetamine", 200, 50));
-    drugArray.add(new Drugs ("acid", 550, 33));
-    drugArray.add(new Drugs ("angel", 400, 60));
-    drugArray.add(new Drugs ("chrystal meth", 800, 38));
-    drugArray.add(new Drugs ("hash", 180, 100));
-    drugArray.add(new Drugs ("weed", 150, 115));
-    drugArray.add(new Drugs ("mushrooms", 120, 95));
-     
+        return drugName;
     }
-    
 
+    public void setDrugName(String drugName)
+    {
+        this.drugName = drugName;
+    }
 
+    public int getBasePrice()
+    {
+        return basePrice;
+    }
 
+    public void setBasePrice(int basePrice)
+    {
+        this.basePrice = basePrice;
+    }
+
+    public int getBaseAvailability()
+    {
+        return baseAvailability;
+    }
+
+    public void setBaseAvailability(int baseAvailability)
+    {
+        this.baseAvailability = baseAvailability;
+    }
     
 }
