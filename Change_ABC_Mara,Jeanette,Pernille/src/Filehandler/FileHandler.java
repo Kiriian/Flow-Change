@@ -18,8 +18,7 @@ import java.util.Scanner;
  */
 public class FileHandler
 {
-    
-    public static ArrayList<Person> load (String filename)
+    public static ArrayList<Person> loadPerson (String filename)
     {
     Scanner file_scanner = null;
     ArrayList<Person> highScore = new ArrayList<>();
@@ -46,6 +45,37 @@ public class FileHandler
 
         file_scanner.close();  //Closing the file
         return highScore;    //returning the arraylist
+    }
+    
+        public static ArrayList<Drugs> loadDrugs (String filename)
+    {
+        Scanner file_scanner = null;
+        ArrayList<Drugs> drugArray = new ArrayList<>();
+
+        try {
+            file_scanner = new Scanner(new File(filename));  //Connection to the file using the Scanner object
+        } catch (FileNotFoundException ex) {
+            System.out.println("Could not find the file to load from! Returning null.");
+            ex.printStackTrace();
+            return null;  //If something goes wrong the method returns null
+        }
+
+        while (file_scanner.hasNextLine()) {  //File found. Reading one line. 
+            String linje = file_scanner.nextLine();
+            Scanner sc = new Scanner(linje).useDelimiter(",");
+            String drugName = sc.next();
+            int basePrice = sc.nextInt();
+            int baseAvailiablity = sc.nextInt();
+           // System.out.println("Q"+question);
+            int score = sc.nextInt();
+            //System.out.println("A"+answer);
+            Drugs d = new Drugs(drugName, basePrice, baseAvailiablity);
+            System.out.println(d);
+            drugArray.add(d);  //Reading in a single line and saving in the ArrayList
+        }
+
+        file_scanner.close();  //Closing the file
+        return drugArray;    //returning the arraylist
     } 
     
     public static boolean save(ArrayList<Person> highScore, String filename) 
