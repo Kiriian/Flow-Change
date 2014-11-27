@@ -148,6 +148,14 @@ public class MainGUI extends javax.swing.JFrame
             }
         });
 
+        jTextField11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jTextField11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout moneyscoreLayout = new javax.swing.GroupLayout(moneyscore);
         moneyscore.setLayout(moneyscoreLayout);
         moneyscoreLayout.setHorizontalGroup(
@@ -781,6 +789,11 @@ public class MainGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_enterusernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_enterusernameActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jTextField11ActionPerformed
+    {//GEN-HEADEREND:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
 
     /**
      * @param args the command line arguments
