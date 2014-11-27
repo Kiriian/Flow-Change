@@ -12,15 +12,17 @@ package Interface;
 public interface Interface
 {
     // metode til at ændre GUI og som tæller dagene.
-    void travel(int days);
+    void travel();
     
     // metode til at beregne den endelige availability af drugs. returnerer antal.
    int calculateAvailability();
    
-    // metode til at udregne den endelige prise for en pakke af både heroin eller cocain 
+    int getBasePrice();
+
+    // metode til at udregne den endelige prise for en pakke af drugs 
     int CalculateFinalPrice();
     
-    
+    int getBaseAvailiablity();
     
     //her bliver total prisen udregnet og trukket fra persones konto
     void buyDrugs();

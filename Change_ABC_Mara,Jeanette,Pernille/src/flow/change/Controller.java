@@ -17,15 +17,17 @@ import java.util.ArrayList;
  */
 public class Controller implements Interface
 {
+
     private Random random = new Random();
-    private ArrayList <Drugs> drugArray = new ArrayList<>();
+    private ArrayList<Drugs> drugArray = new ArrayList<>();
+    private Drugs drugName;
     private int adjust;
     private int adjustAva;
     private int middelSum;
     private int finalPrice;
     private int middelSumAva;
     private int finalAvailability;
-    
+
     @Override
     public void buyDrugs()
     {
@@ -37,8 +39,8 @@ public class Controller implements Interface
     {
         drugArray = FileHandler.loadDrugs("Drugs.txt");
         FileHandler.loadPerson(filename);
-        
-        if (drugArray == null )
+
+        if (drugArray == null)
         {
             return false;
         } else
@@ -51,7 +53,7 @@ public class Controller implements Interface
     public boolean save(String filename)
     {
         FileHandler.save(null, filename);
-        
+
         return true;
     }
 
@@ -62,48 +64,81 @@ public class Controller implements Interface
     }
 
     @Override
-    public void travel(int days)// her tænker jeg at der skal slettes int days - da vi ikke giver antallet af dage med til metoden - vi beregner den her
+    public int calculateAvailability()
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        adjustAva = random.nextInt(40) + 15;
+        if (adjustAva % 2 == 0)// denne kode tager kun højde for kokain
+        {
+            middelSumAva = ((adjustAva * getBaseAvailiablity()) / 100);
+            finalAvailability = getBaseAvailiablity() - middelSum;
+            System.out.println("availability" + finalAvailability);
+            return finalAvailability;
+        } else
+        {
+            middelSumAva = ((adjustAva * getBaseAvailiablity()) / 100);
+            finalAvailability = getBaseAvailiablity() + middelSum;
+            System.out.println("availability" + finalAvailability);
+            return finalAvailability;
+        }
+    }
+
+    @Override
+    public void travel()
+    {
+       
+    }
+
+    @Override
+    public int getBasePrice()
+    {
+        for (Drugs i : drugArray)
+        {
+            if (drugName.equals(i.getDrugName()))
+            {
+                return i.getBasePrice();
+
+            } else
+            {
+                return 0;
+            }
+        }
+        return 0;
     }
 
     @Override
     public int CalculateFinalPrice()
     {
-       adjust = random.nextInt(85)+1;
-       if(adjust%2==0)// denne kode tager kun højde for kokain
-       {
-           middelSum =((adjust*cocaine.getBasePriceCocaine())/100);
-           finalPrice = cocaine.getBasePriceCocaine()-middelSum;
-           System.out.println("pris"+finalPrice);
-           return finalPrice;
-           
-       }else
-       {
-           middelSum =((adjust*cocaine.getBasePriceCocaine())/100);
-           finalPrice = cocaine.getBasePriceCocaine()+middelSum;
-           System.out.println("pris"+finalPrice);
-           return finalPrice;
-       }     
+        adjust = random.nextInt(85)+1;
+        if (adjustAva % 2 == 0)// denne kode tager kun højde for kokain
+        {
+            middelSum = ((adjust * getBasePrice())/ 100);
+            finalPrice = getBasePrice() - middelSum;
+            System.out.println("Price" + finalPrice);
+            return finalPrice;
+        } else
+        {
+            middelSum = ((adjust * getBasePrice())/ 100);
+            finalPrice = getBasePrice() + middelSum;
+            System.out.println("Price" + finalPrice);
+            return finalPrice;
+        }
     }
 
     @Override
-    public int calculateAvailability()
+    public int getBaseAvailiablity()
     {
-       adjustAva = random.nextInt(40)+15;
-       if(adjustAva%2==0)// denne kode tager kun højde for kokain
-       {
-           middelSumAva =((adjustAva*cocaine.getBaseAvailabilityCocaine())/100);
-           finalAvailability = cocaine.getBasePriceCocaine()-middelSum;
-           System.out.println("availability"+finalAvailability);
-           return finalAvailability;
-       }else
-       {
-           middelSumAva =((adjustAva*cocaine.getBasePriceCocaine())/100);
-           finalAvailability = cocaine.getBaseAvailabilityCocaine()+middelSum;
-           System.out.println("availability"+finalAvailability);
-           return finalAvailability;
-       }     
+        for (Drugs i : drugArray)
+        {
+            if (drugName.equals(i.getDrugName()))
+            {
+                return i.getBaseAvailability();
+
+            } else
+            {
+                return 0;
+            }
+        }
+        return 0;
     }
-    
+
 }
