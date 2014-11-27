@@ -38,8 +38,7 @@ public class Controller implements ChangeInterface
     @Override
     public boolean load(String filename)
     {
-        drugArray = FileHandler.loadDrugs("Drugs.txt");
-        FileHandler.loadPerson(filename);
+        drugArray = FileHandler.loadDrugs(filename);
 
         if (drugArray == null)
         {
@@ -87,6 +86,7 @@ public class Controller implements ChangeInterface
     public void travel()
     {
        days++;
+        System.out.println("Number of Days: " + days);
     }
 
     @Override

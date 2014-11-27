@@ -11,6 +11,7 @@ public class MainGUI extends javax.swing.JFrame
     public MainGUI()
     {
         changeInterface = new Controller();
+        changeInterface.load(Drugs.txt);
         initComponents();
     }
 
@@ -271,7 +272,7 @@ public class MainGUI extends javax.swing.JFrame
 
         jLabel31.setText("Weed");
 
-        KokainAmount1.setText("5");
+        KokainAmount1.setEnabled(false);
         KokainAmount1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -280,7 +281,8 @@ public class MainGUI extends javax.swing.JFrame
             }
         });
 
-        KokainAmount2.setText("5");
+        KokainAmount2.setText("Cocain:");
+        KokainAmount2.setEnabled(false);
         KokainAmount2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -296,95 +298,90 @@ public class MainGUI extends javax.swing.JFrame
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Acid)
-                    .addComponent(jLabel28)
-                    .addComponent(Crystal)
-                    .addComponent(Heroin)
-                    .addComponent(Angel)
-                    .addComponent(Amph, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(UserName)
-                            .addGap(74, 74, 74)
-                            .addComponent(AvMoney))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(PriceTotal)
-                            .addGap(18, 18, 18)
-                            .addComponent(PriceTotalTal))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel31)
-                                .addComponent(jLabel34)
-                                .addComponent(KokainAmount2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel34)
+                            .addComponent(KokainAmount2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(53, 53, 53)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(59, 59, 59)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel2Layout.createSequentialGroup()
-                                            .addComponent(jLabel32)
-                                            .addGap(57, 57, 57)
-                                            .addComponent(jLabel33))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addComponent(Available)
-                                                .addGap(57, 57, 57)
-                                                .addComponent(Price))
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addComponent(jLabel29)
-                                                .addGap(57, 57, 57)
-                                                .addComponent(jLabel30)))
-                                        .addGroup(jPanel2Layout.createSequentialGroup()
-                                            .addComponent(jLabel35)
-                                            .addGap(57, 57, 57)
-                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(Buy)
-                                                .addComponent(jLabel36)))))
+                                    .addComponent(jLabel32)
+                                    .addGap(57, 57, 57)
+                                    .addComponent(jLabel33))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(Available)
+                                        .addGap(57, 57, 57)
+                                        .addComponent(Price))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel29)
+                                        .addGap(57, 57, 57)
+                                        .addComponent(jLabel30)))
                                 .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(KokainAmount1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(jPanel2Layout.createSequentialGroup()
-                                            .addGap(59, 59, 59)
-                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(CrystalAv)
-                                                .addComponent(AngelAv)
-                                                .addComponent(AcidAv)
-                                                .addComponent(AmphAv)
-                                                .addComponent(HeroinAv))))
+                                    .addComponent(jLabel35)
                                     .addGap(57, 57, 57)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(AngelPrice, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(AcidPrice, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(AmphPrice, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(HeroinPrice, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(KokainPrice, javax.swing.GroupLayout.Alignment.TRAILING))))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                    .addGap(64, 64, 64)
+                                        .addComponent(Buy)
+                                        .addComponent(jLabel36))))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(KokainAmount1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CrystalAv)
+                                    .addComponent(AngelAv)
+                                    .addComponent(AcidAv)
+                                    .addComponent(AmphAv)
+                                    .addComponent(HeroinAv))
+                                .addGap(57, 57, 57)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(AngelPrice, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(AcidPrice, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(AmphPrice, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(HeroinPrice, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(KokainPrice, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addGap(64, 64, 64)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(KokainAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(HeroinAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(AngelAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(AcidAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(AmphAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(Travel))
-                                    .addGap(57, 57, 57))
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(38, 38, 38)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(DaysLeft)
-                                        .addComponent(Amount))
-                                    .addGap(44, 44, 44))))))
-                .addContainerGap(102, Short.MAX_VALUE))
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(KokainAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(HeroinAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(AngelAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(AcidAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AmphAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(Travel))
+                                .addContainerGap(159, Short.MAX_VALUE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(DaysLeft)
+                                    .addComponent(Amount))
+                                .addContainerGap(146, Short.MAX_VALUE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(UserName)
+                                .addGap(74, 74, 74)
+                                .addComponent(AvMoney))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(PriceTotal)
+                                .addGap(18, 18, 18)
+                                .addComponent(PriceTotalTal))
+                            .addComponent(Acid)
+                            .addComponent(jLabel28)
+                            .addComponent(Crystal)
+                            .addComponent(Heroin)
+                            .addComponent(Angel)
+                            .addComponent(Amph, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -644,12 +641,14 @@ public class MainGUI extends javax.swing.JFrame
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
        jTabbedPane1.setSelectedIndex(1);
-       KokainAmount1.setText(changeInterface.getBaseAvailiablity(null));
+       KokainAmount1.setText(changeInterface.getBaseAvailiablity(KokainAmount2.getText()) + "");
+       changeInterface.travel();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void TravelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_TravelActionPerformed
     {//GEN-HEADEREND:event_TravelActionPerformed
         jTabbedPane1.setSelectedIndex(2);
+        changeInterface.travel();
     }//GEN-LAST:event_TravelActionPerformed
 
     private void KokainAmountActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_KokainAmountActionPerformed
@@ -660,6 +659,7 @@ public class MainGUI extends javax.swing.JFrame
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
     {//GEN-HEADEREND:event_jButton3ActionPerformed
         jTabbedPane1.setSelectedIndex(1);
+        changeInterface.travel();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void KokainAmount1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_KokainAmount1ActionPerformed
