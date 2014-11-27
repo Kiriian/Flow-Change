@@ -6,7 +6,7 @@
 package flow.change;
 
 import Filehandler.FileHandler;
-import Interface.Interface;
+import Interface.ChangeInterface;
 import java.util.Random;
 import Model.Drugs;
 import java.util.ArrayList;
@@ -15,12 +15,12 @@ import java.util.ArrayList;
  *
  * @author Jeanette
  */
-public class Controller implements Interface
+public class Controller implements ChangeInterface
 {
 
     private Random random = new Random();
     private ArrayList<Drugs> drugArray = new ArrayList<>();
-    private Drugs drugName;
+    private String drugName;
     private int adjust;
     private int adjustAva;
     private int middelSum;
@@ -70,14 +70,14 @@ public class Controller implements Interface
         adjustAva = random.nextInt(40) + 15;
         if (adjustAva % 2 == 0)// denne kode tager kun højde for kokain
         {
-            middelSumAva = ((adjustAva * getBaseAvailiablity()) / 100);
-            finalAvailability = getBaseAvailiablity() - middelSum;
+            middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
+            finalAvailability = getBaseAvailiablity(drugName) - middelSum;
             System.out.println("availability" + finalAvailability);
             return finalAvailability;
         } else
         {
-            middelSumAva = ((adjustAva * getBaseAvailiablity()) / 100);
-            finalAvailability = getBaseAvailiablity() + middelSum;
+            middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
+            finalAvailability = getBaseAvailiablity(drugName) + middelSum;
             System.out.println("availability" + finalAvailability);
             return finalAvailability;
         }
@@ -90,7 +90,7 @@ public class Controller implements Interface
     }
 
     @Override
-    public int getBasePrice()
+    public int getBasePrice(String drugName)
     {
         for (Drugs i : drugArray)
         {
@@ -112,21 +112,21 @@ public class Controller implements Interface
         adjust = random.nextInt(85)+1;
         if (adjust % 2 == 0)// denne kode tager kun højde for kokain
         {
-            middelSum = ((adjust * getBasePrice())/ 100);
-            finalPrice = getBasePrice() - middelSum;
+            middelSum = ((adjust * getBasePrice(drugName))/ 100);
+            finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
             return finalPrice;
         } else
         {
-            middelSum = ((adjust * getBasePrice())/ 100);
-            finalPrice = getBasePrice() + middelSum;
+            middelSum = ((adjust * getBasePrice(drugName))/ 100);
+            finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
             return finalPrice;
         }
     }
 
     @Override
-    public int getBaseAvailiablity()
+    public int getBaseAvailiablity(String drugName)
     {
         for (Drugs i : drugArray)
         {

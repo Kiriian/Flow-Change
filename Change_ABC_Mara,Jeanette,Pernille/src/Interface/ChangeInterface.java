@@ -9,7 +9,7 @@ package Interface;
  *
  * @author Marta, Pernille og Jeanette
  */
-public interface Interface
+public interface ChangeInterface
 {
     // metode til at ændre GUI og som tæller dagene.
     void travel();
@@ -17,12 +17,13 @@ public interface Interface
     // metode til at beregne den endelige availability af drugs. returnerer antal.
    int calculateAvailability();
    
-    int getBasePrice();
+    int getBasePrice(String drugName);
 
     // metode til at udregne den endelige prise for en pakke af drugs 
     int CalculateFinalPrice();
     
-    int getBaseAvailiablity();
+    
+    int getBaseAvailiablity(String drugName);
     
     //her bliver total prisen udregnet og trukket fra persones konto
     void buyDrugs();
