@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package flow.change;
+package Interface;
 
 /**
  *
@@ -14,8 +14,13 @@ public interface Interface
     // metode til at ændre GUI og som tæller dagene.
     void travel(int days);
     
+    // metode til at beregne den endelige availability af drugs. returnerer antal.
+   int calculateAvailability();
+   
     // metode til at udregne den endelige prise for en pakke af både heroin eller cocain 
     int CalculateFinalPrice();
+    
+    
     
     //her bliver total prisen udregnet og trukket fra persones konto
     void buyDrugs();
