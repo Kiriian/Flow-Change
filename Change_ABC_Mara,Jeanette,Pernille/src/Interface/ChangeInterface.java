@@ -31,7 +31,7 @@ public interface ChangeInterface
     void buyDrugs();
     
     //her bliver total prisen udregnet og tilføjet til persones konto
-    void sellDrugs();
+    int sellDrugs(String drugName);
     
     //
     boolean load(String filename);
