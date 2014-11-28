@@ -32,11 +32,13 @@ public class Controller implements ChangeInterface
     private int finalAvailability;
     private int days;
     private int factor;
+    Drugs i;
+    private int endPrice;
 
     @Override
     public void buyDrugs()
     {
-
+        
     }
 
     @Override
@@ -145,13 +147,16 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
-
+//            endPrice =finalPrice * factor;
+            System.out.println("endPrice"+endPrice);
             return finalPrice;
         } else
         {
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
+//            endPrice =finalPrice * factor;
+            System.out.println("endPrice"+endPrice);
             return finalPrice;
         }
     }
@@ -186,10 +191,9 @@ public class Controller implements ChangeInterface
     @Override
     public int goldenNumberFactor()
     {
-        return 0;
 //        Random rand = new Random ();
 //        int chance = rand.nextInt(100);
-//        if (chance<= )
+//        if (chance<= i.getGoldenNumber())//virker ikke - finder ikke det valgte drugs golden number
 //        {
 //            if (chance%2==0)
 //            { 
@@ -203,7 +207,7 @@ public class Controller implements ChangeInterface
 //        {
 //            factor = 1;
 //        }
-
+        return 1;
     }
 
 }
