@@ -35,7 +35,7 @@ public class Controller implements ChangeInterface
     @Override
     public void buyDrugs()
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
@@ -76,7 +76,6 @@ public class Controller implements ChangeInterface
             {
                 temp = dObject;
                 return temp.getBaseAvailability();
-
             }
         }
         return 0;
@@ -106,14 +105,16 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public void travel(String username, int score)
+    public int travel(String username, int score)
     {
         if (days == 20)
         {
             addPerson(username, score);
+            return days;
         } else
         {
             days++;
+            return days;
         }
     }
 

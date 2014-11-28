@@ -1096,9 +1096,19 @@ public class MainGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_TravelActionPerformed
        jTabbedPane1.setSelectedIndex(2);
        changeInterface.getBaseAvailiablity(Kokain.getText());
+       changeInterface.getBaseAvailiablity(Heroin.getText());
+       changeInterface.getBaseAvailiablity(Amphetamine.getText());
+       changeInterface.getBaseAvailiablity(Acid.getText());
+       changeInterface.getBaseAvailiablity(Acid.getText());
+       changeInterface.getBaseAvailiablity(AngelDust.getText());
+       changeInterface.getBaseAvailiablity(CrystalMeth.getText());
+       changeInterface.getBaseAvailiablity(Hash.getText());
+       changeInterface.getBaseAvailiablity(Weed.getText());
+       changeInterface.getBaseAvailiablity(Mushrooms.getText());
+       changeInterface.getBaseAvailiablity(Valium.getText());
        KokainAva.setText(changeInterface.calculateAvailability(Kokain.getText())+ "");
        HeroinAva.setText(changeInterface.calculateAvailability(Heroin.getText()) + "");
-       AmphAv.setText(changeInterface.calculateAvailability(Amphetamine.getText()) + "");
+       AmphAv.setText(changeInterface.calculateAvailability(Amphetamine.getText()) + "");     
        AcidAv.setText(changeInterface.calculateAvailability(Acid.getText()) + "");
        AngelAv.setText(changeInterface.calculateAvailability(AngelDust.getText()) + "");
        CrystalAv.setText(changeInterface.calculateAvailability(CrystalMeth.getText()) + "");
@@ -1117,8 +1127,6 @@ public class MainGUI extends javax.swing.JFrame
        MushPrice.setText(changeInterface.CalculateFinalPrice(Mushrooms.getText()) + "");
        ValiumPrice.setText(changeInterface.CalculateFinalPrice(Valium.getText()) + "");
        
-       
-       changeInterface.travel(Username, AvMoney.getText();
        Username.setText(enterusername.getText());
     }//GEN-LAST:event_TravelActionPerformed
 
@@ -1186,7 +1194,6 @@ public class MainGUI extends javax.swing.JFrame
     private void Travel2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Travel2ActionPerformed
     {//GEN-HEADEREND:event_Travel2ActionPerformed
         jTabbedPane1.setSelectedIndex(1);
-        changeInterface.travel();
     }//GEN-LAST:event_Travel2ActionPerformed
 
     private void Travel1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Travel1ActionPerformed
