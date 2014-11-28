@@ -36,7 +36,7 @@ public class Controller implements ChangeInterface
     @Override
     public void buyDrugs()
     {
-        
+
     }
 
     @Override
@@ -91,7 +91,7 @@ public class Controller implements ChangeInterface
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) - middelSumAva;
-            System.out.println("middelsum" + middelSumAva+"adjust"+adjustAva);
+            System.out.println("middelsum" + middelSumAva + "adjust" + adjustAva);
 
             System.out.println("availability?" + finalAvailability);
             return finalAvailability;
@@ -100,7 +100,7 @@ public class Controller implements ChangeInterface
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) + middelSumAva;
             System.out.println("middelsum" + middelSumAva);
-            System.out.println("availability" + finalAvailability+"adjust"+adjustAva);
+            System.out.println("availability" + finalAvailability + "adjust" + adjustAva);
             return finalAvailability;
         }
     }
@@ -123,19 +123,17 @@ public class Controller implements ChangeInterface
     public int getBasePrice(String drugName)
     {
         drugArray = FileHandler.loadDrugs("Drugs.txt");
-        
+
+        int temp = 0;
         for (Drugs i : drugArray)
         {
             if (drugName.equals(i.getDrugName()))
             {
-                return i.getBasePrice();
-
-            } else
-            {
-                return 0;
+                temp = i.getBasePrice();
             }
+
         }
-        return 0;
+        return temp;
     }
 
     @Override
@@ -147,7 +145,7 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
-     
+
             return finalPrice;
         } else
         {
@@ -162,18 +160,18 @@ public class Controller implements ChangeInterface
     public int getBaseAvailiablity(String drugName)
     {
         drugArray = FileHandler.loadDrugs("Drugs.txt");
-        
+
+        int temp = 0;
         for (Drugs i : drugArray)
         {
             if (drugName.equals(i.getDrugName()))
             {
-                return i.getBaseAvailability();
-            } else
-            {
-                return 0;
+                temp = i.getBaseAvailability();
+                break;
             }
+
         }
-        return 0;
+        return temp;
     }
 
     @Override
@@ -183,28 +181,29 @@ public class Controller implements ChangeInterface
 
         FileHandler.save(userArray, "highscore.txt");
     }
+
     // beregner faktor til at gange på prisen. Faktor 10 hvis goldennumber er i in range.
     @Override
     public int goldenNumberFactor()
     {
-        Random rand = new Random ();
-        int chance = rand.nextInt(100);
-        if (chance<= )
-        {
-            if (chance%2==0)
-            { 
-                factor = 10;
-            }
-            else
-            {
-                factor = 1;
-            }     
-        }else
-        {
-            factor = 1;
-        }
-            
-            
+        return 0;
+//        Random rand = new Random ();
+//        int chance = rand.nextInt(100);
+//        if (chance<= )
+//        {
+//            if (chance%2==0)
+//            { 
+//                factor = 10;
+//            }
+//            else
+//            {
+//                factor = 1;
+//            }     
+//        }else
+//        {
+//            factor = 1;
+//        }
+
     }
 
 }
