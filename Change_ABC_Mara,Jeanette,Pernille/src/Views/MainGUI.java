@@ -1095,26 +1095,8 @@ public class MainGUI extends javax.swing.JFrame
     private void TravelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_TravelActionPerformed
     {//GEN-HEADEREND:event_TravelActionPerformed
        jTabbedPane1.setSelectedIndex(2);
-       KokainAva.setText(changeInterface.calculateAvailability(Kokain.getText())+ "");
-       HeroinAva.setText(changeInterface.calculateAvailability(Heroin.getText()) + "");
-       AmphAv.setText(changeInterface.calculateAvailability(Amphetamine.getText()) + "");     
-       AcidAv.setText(changeInterface.calculateAvailability(Acid.getText()) + "");
-       AngelAv.setText(changeInterface.calculateAvailability(AngelDust.getText()) + "");
-       CrystalAv.setText(changeInterface.calculateAvailability(CrystalMeth.getText()) + "");
-       HashAv.setText(changeInterface.calculateAvailability(Hash.getText()) + "");
-       WeedAv.setText(changeInterface.calculateAvailability(Weed.getText()) + "");
-       MushAv.setText(changeInterface.calculateAvailability(Mushrooms.getText()) + "");
-       ValiumAv.setText(changeInterface.calculateAvailability(Valium.getText()) + "");
-       KokainPrice.setText(changeInterface.CalculateFinalPrice(Kokain.getText()) + "");
-       HeroinPrice.setText(changeInterface.CalculateFinalPrice(Heroin.getText()) + "");
-       AmphPrice.setText(changeInterface.CalculateFinalPrice(Amphetamine.getText()) + "");
-       AcidPrice.setText(changeInterface.CalculateFinalPrice(Acid.getText()) + "");
-       AngelPrice.setText(changeInterface.CalculateFinalPrice(AngelDust.getText()) + "");
-       CrystalPrice.setText(changeInterface.CalculateFinalPrice(CrystalMeth.getText()) + "");
-       HashPrice.setText(changeInterface.CalculateFinalPrice(Hash.getText()) + "");
-       WeedPrice.setText(changeInterface.CalculateFinalPrice(Weed.getText()) + "");
-       MushPrice.setText(changeInterface.CalculateFinalPrice(Mushrooms.getText()) + "");
-       ValiumPrice.setText(changeInterface.CalculateFinalPrice(Valium.getText()) + "");
+       
+       Drugs drugName
        
        Username.setText(enterusername.getText());
     }//GEN-LAST:event_TravelActionPerformed
