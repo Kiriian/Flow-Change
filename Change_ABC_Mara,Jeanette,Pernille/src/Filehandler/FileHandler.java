@@ -65,7 +65,8 @@ public class FileHandler
             String drugName = sc.next();
             int basePrice = sc.nextInt();
             int baseAvailiablity = sc.nextInt();
-            Drugs d = new Drugs(drugName, basePrice, baseAvailiablity);
+            int goldenNumber = sc.nextInt();
+            Drugs d = new Drugs(drugName, basePrice, baseAvailiablity, goldenNumber);
             drugArray.add(d);  //Reading in a single line and saving in the ArrayList
             System.out.println(d.getDrugName());
         }

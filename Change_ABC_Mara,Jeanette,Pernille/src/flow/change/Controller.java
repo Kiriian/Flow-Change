@@ -9,6 +9,7 @@ import Filehandler.FileHandler;
 import Interface.ChangeInterface;
 import java.util.Random;
 import Model.Drugs;
+import Model.Person;
 import java.util.ArrayList;
 
 /**
@@ -20,6 +21,7 @@ public class Controller implements ChangeInterface
 
     private Random random = new Random();
     private ArrayList<Drugs> drugArray = new ArrayList<>();
+    private ArrayList<Person> userArray = new ArrayList<>();
     private String drugName;
     private int adjust;
     private int adjustAva;
@@ -52,9 +54,15 @@ public class Controller implements ChangeInterface
     @Override
     public boolean save(String filename)
     {
-        FileHandler.save(null, filename);
+        FileHandler.save(userArray, "highscore.txt");
 
-        return true;
+        if (userArray == null)
+        {
+            return false;
+        } else
+        {
+            return true;
+        }
     }
 
     @Override
@@ -67,30 +75,35 @@ public class Controller implements ChangeInterface
     public int calculateAvailability(String drugName)
     {
         adjustAva = random.nextInt(40) + 15;
-        System.out.println("adjustAva "+adjustAva);
+        System.out.println("adjustAva " + adjustAva);
         if (adjustAva % 2 == 0)
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) - middelSumAva;
-            System.out.println("middelsum"+middelSumAva);
-                    
+            System.out.println("middelsum" + middelSumAva);
+
             System.out.println("availability?" + finalAvailability);
             return finalAvailability;
         } else
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) + middelSumAva;
-            System.out.println("middelsum"+middelSumAva);
+            System.out.println("middelsum" + middelSumAva);
             System.out.println("availability" + finalAvailability);
             return finalAvailability;
         }
     }
 
     @Override
-    public void travel()
+    public void travel(String username, int score)
     {
-       days++;
-        System.out.println("Number of Days: " + days);
+        days++;
+        if (days == 20)
+        {
+            addPerson(username, score);            
+        } else
+        {
+        }
     }
 
     @Override
@@ -113,16 +126,16 @@ public class Controller implements ChangeInterface
     @Override
     public int CalculateFinalPrice(String drugName)
     {
-        adjust = random.nextInt(85)+1;
+        adjust = random.nextInt(85) + 1;
         if (adjust % 2 == 0)// denne kode tager kun højde for kokain
         {
-            middelSum = ((adjust * getBasePrice(drugName))/ 100);
+            middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
             return finalPrice;
         } else
         {
-            middelSum = ((adjust * getBasePrice(drugName))/ 100);
+            middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
             return finalPrice;
@@ -138,13 +151,21 @@ public class Controller implements ChangeInterface
             {
                 System.out.println("Gere");
                 return i.getBaseAvailability();
-
             } else
             {
                 return 0;
             }
         }
         return 0;
+    }
+
+    @Override
+    public void addPerson(String userName, int score)
+    {
+        userArray.add(new Person(userName, score));
+        
+        userArray = FileHandler.loadPerson("highscore.txt");
+        FileHandler.save(userArray, "highscore.txt");
     }
 
 }

@@ -16,12 +16,24 @@ public class Drugs
     private String drugName;
     private int basePrice;
     private int baseAvailability;
+    private int goldenNumber;
 
-    public Drugs(String drugName, int basePrice, int baseAvailability)
+    public Drugs(String drugName, int basePrice, int baseAvailability, int goldenNumber)
     {
         this.drugName = drugName;
         this.basePrice = basePrice;
         this.baseAvailability = baseAvailability;
+        this.goldenNumber = goldenNumber;
+    }
+
+    public int getGoldenNumber()
+    {
+        return goldenNumber;
+    }
+
+    public void setGoldenNumber(int goldenNumber)
+    {
+        this.goldenNumber = goldenNumber;
     }
 
     public String getDrugName()
@@ -55,9 +67,8 @@ public class Drugs
     }
 
     @Override
-    public String toString() {
-        return "Drugs{" + "drugName=" + drugName + ", basePrice=" + basePrice + ", baseAvailability=" + baseAvailability + '}';
+    public String toString()
+    {
+        return "Drugs{" + "drugName=" + drugName + ", basePrice=" + basePrice + ", baseAvailability=" + baseAvailability + ", goldenNumber=" + goldenNumber + '}';
     }
-    
-    
 }

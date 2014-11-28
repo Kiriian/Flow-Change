@@ -11,8 +11,10 @@ package Interface;
  */
 public interface ChangeInterface
 {
+    void addPerson(String userName, int highScore);
+
     // metode til at ændre GUI og som tæller dagene.
-    void travel();
+    void travel(String username, int score);
     
     // metode til at beregne den endelige availability af drugs. returnerer antal.
    int calculateAvailability(String drugName);
