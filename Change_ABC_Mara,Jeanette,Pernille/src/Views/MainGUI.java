@@ -1095,17 +1095,6 @@ public class MainGUI extends javax.swing.JFrame
     private void TravelActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_TravelActionPerformed
     {//GEN-HEADEREND:event_TravelActionPerformed
        jTabbedPane1.setSelectedIndex(2);
-       changeInterface.getBaseAvailiablity(Kokain.getText());
-       changeInterface.getBaseAvailiablity(Heroin.getText());
-       changeInterface.getBaseAvailiablity(Amphetamine.getText());
-       changeInterface.getBaseAvailiablity(Acid.getText());
-       changeInterface.getBaseAvailiablity(Acid.getText());
-       changeInterface.getBaseAvailiablity(AngelDust.getText());
-       changeInterface.getBaseAvailiablity(CrystalMeth.getText());
-       changeInterface.getBaseAvailiablity(Hash.getText());
-       changeInterface.getBaseAvailiablity(Weed.getText());
-       changeInterface.getBaseAvailiablity(Mushrooms.getText());
-       changeInterface.getBaseAvailiablity(Valium.getText());
        KokainAva.setText(changeInterface.calculateAvailability(Kokain.getText())+ "");
        HeroinAva.setText(changeInterface.calculateAvailability(Heroin.getText()) + "");
        AmphAv.setText(changeInterface.calculateAvailability(Amphetamine.getText()) + "");     

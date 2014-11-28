@@ -31,6 +31,7 @@ public class Controller implements ChangeInterface
     private int middelSumAva;
     private int finalAvailability;
     private int days;
+    private int factor;
 
     @Override
     public void buyDrugs()
@@ -90,7 +91,7 @@ public class Controller implements ChangeInterface
         {
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) - middelSumAva;
-            System.out.println("middelsum" + middelSumAva);
+            System.out.println("middelsum" + middelSumAva+"adjust"+adjustAva);
 
             System.out.println("availability?" + finalAvailability);
             return finalAvailability;
@@ -99,7 +100,7 @@ public class Controller implements ChangeInterface
             middelSumAva = ((adjustAva * getBaseAvailiablity(drugName)) / 100);
             finalAvailability = getBaseAvailiablity(drugName) + middelSumAva;
             System.out.println("middelsum" + middelSumAva);
-            System.out.println("availability" + finalAvailability);
+            System.out.println("availability" + finalAvailability+"adjust"+adjustAva);
             return finalAvailability;
         }
     }
@@ -144,6 +145,7 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
+     
             return finalPrice;
         } else
         {
@@ -176,6 +178,29 @@ public class Controller implements ChangeInterface
         userArray.add(new Person(userName, score));
 
         FileHandler.save(userArray, "highscore.txt");
+    }
+    // beregner faktor til at gange på prisen. Faktor 10 hvis goldennumber er i in range.
+    @Override
+    public int goldenNumberFactor()
+    {
+        Random rand = new Random ();
+        int chance = rand.nextInt(100);
+        if (chance<= )
+        {
+            if (chance%2==0)
+            { 
+                factor = 10;
+            }
+            else
+            {
+                factor = 1;
+            }     
+        }else
+        {
+            factor = 1;
+        }
+            
+            
     }
 
 }

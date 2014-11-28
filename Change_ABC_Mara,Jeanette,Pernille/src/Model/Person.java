@@ -11,7 +11,7 @@ package Model;
  */
 public class Person
 {
-    private int readyCash;
+   
     private int score;
     private String username;
 
@@ -20,25 +20,16 @@ public class Person
         this.score = score;
         this.username = username;
     }
+    //bør vi ikke sidestille cash med point - har allerede gjort det i guien...
 
-    public int getReadyCash()
-    {
-        return readyCash;
-    }
-
-    public void setReadyCash(int readyCash)
-    {
-        this.readyCash = readyCash;
-    }
-
-    public int getHighScore()
+    public int getScore()
     {
         return score;
     }
 
-    public void setHighScore(int highScore)
+    public void setScore(int Score)
     {
-        this.score = highScore;
+        this.score = Score;
     }
 
     public String getUsername()
@@ -54,7 +45,7 @@ public class Person
     @Override
     public String toString()
     {
-        return "Person{" + "highScore=" + score + ", username=" + username + '}';
+        return "Person{" + "Score=" + score + ", username=" + username + '}';
     }
        
 }
