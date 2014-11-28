@@ -22,6 +22,7 @@ public class Controller implements ChangeInterface
     private Random random = new Random();
     private ArrayList<Drugs> drugArray = new ArrayList<>();
     private ArrayList<Person> userArray = new ArrayList<>();
+    private ArrayList<Drugs> yourDrugs = new ArrayList<>();
     private String drugName;
     private int adjust;
     private int adjustAva;
@@ -66,9 +67,19 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public void sellDrugs()
+    public int sellDrugs(String drugName)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Drugs temp = null;
+        for (Drugs dObject : yourDrugs)
+        {
+            if (dObject.getDrugName().equals(drugName))
+            {
+                temp = dObject;
+                return temp.getBaseAvailability();
+
+            }
+        }
+        return 0;
     }
 
     @Override
@@ -97,12 +108,12 @@ public class Controller implements ChangeInterface
     @Override
     public void travel(String username, int score)
     {
-        days++;
         if (days == 20)
         {
-            addPerson(username, score);            
+            addPerson(username, score);
         } else
         {
+            days++;
         }
     }
 
@@ -149,7 +160,6 @@ public class Controller implements ChangeInterface
         {
             if (drugName.equals(i.getDrugName()))
             {
-                System.out.println("Gere");
                 return i.getBaseAvailability();
             } else
             {
@@ -163,8 +173,7 @@ public class Controller implements ChangeInterface
     public void addPerson(String userName, int score)
     {
         userArray.add(new Person(userName, score));
-        
-        userArray = FileHandler.loadPerson("highscore.txt");
+
         FileHandler.save(userArray, "highscore.txt");
     }
 
