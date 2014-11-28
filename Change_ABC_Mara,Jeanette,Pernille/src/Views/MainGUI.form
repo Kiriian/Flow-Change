@@ -868,11 +868,11 @@
                                                       <Group type="103" groupAlignment="1" attributes="0">
                                                           <Component id="Travel2" min="-2" max="-2" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="HashAmount" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="CrystalAmount" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="WeedAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="MushAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="ValiumAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="HashGua" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="CrystalGua" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="WeedGua" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="MushGua" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="ValiumGua" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
@@ -885,18 +885,18 @@
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="103" alignment="1" groupAlignment="1" attributes="0">
                                                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                                              <Component id="KokainAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="HeroinAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="KokainGua" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="HeroinGua" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                                              <Component id="AcidAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="AmphAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="AcidGua" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="AmphGua" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                       <Group type="102" attributes="0">
                                                           <Component id="AngelPrice" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                                                          <Component id="AngelAmount" min="-2" pref="52" max="-2" attributes="0"/>
+                                                          <Component id="AngelGua" min="-2" pref="52" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Component id="WeedPrice" min="-2" max="-2" attributes="0"/>
                                                       <Component id="MushPrice" min="-2" max="-2" attributes="0"/>
@@ -935,17 +935,17 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="KokainAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="KokainGua" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="Kokain" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="KokainAva" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="KokainPrice" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="HeroinAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="HeroinGua" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="Heroin" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="AmphAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AmphGua" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="Amphetamine" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="AmphAv" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="AmphPrice" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -955,7 +955,7 @@
                                   <Component id="Acid" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="AcidAv" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="AcidPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="AcidAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AcidGua" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -997,11 +997,11 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="AngelAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="AngelGua" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="CrystalAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="CrystalGua" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="HashAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="HashGua" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1032,11 +1032,11 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Component id="WeedAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="WeedGua" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="MushAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="MushGua" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="ValiumAmount" min="-2" max="-2" attributes="0"/>
+                              <Component id="ValiumGua" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="65" max="32767" attributes="0"/>
@@ -1052,27 +1052,27 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="AmphAmount">
+            <Component class="javax.swing.JTextField" name="AmphGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="AcidAmount">
+            <Component class="javax.swing.JTextField" name="AcidGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="CrystalAmount">
+            <Component class="javax.swing.JTextField" name="CrystalGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="AngelAmount">
+            <Component class="javax.swing.JTextField" name="AngelGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="MushAmount">
+            <Component class="javax.swing.JTextField" name="MushGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
@@ -1082,14 +1082,14 @@
                 <Property name="text" type="java.lang.String" value="Available"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="HashAmount">
+            <Component class="javax.swing.JTextField" name="HashGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Amount">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Amount of packages:"/>
+                <Property name="text" type="java.lang.String" value="Guantity of packages:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Price">
@@ -1099,10 +1099,10 @@
             </Component>
             <Component class="javax.swing.JLabel" name="PriceTotal">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Prices total:"/>
+                <Property name="text" type="java.lang.String" value="Total price:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="HeroinAmount">
+            <Component class="javax.swing.JTextField" name="HeroinGua">
             </Component>
             <Component class="javax.swing.JButton" name="Buy">
               <Properties>
@@ -1117,12 +1117,12 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Travel2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="KokainAmount">
+            <Component class="javax.swing.JTextField" name="KokainGua">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KokainAmountActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KokainGuaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="WeedAmount">
+            <Component class="javax.swing.JTextField" name="WeedGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>
@@ -1333,7 +1333,7 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="ValiumAmount">
+            <Component class="javax.swing.JTextField" name="ValiumGua">
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
               </Properties>

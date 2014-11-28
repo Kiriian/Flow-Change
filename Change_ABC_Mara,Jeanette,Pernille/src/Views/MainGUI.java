@@ -94,21 +94,21 @@ public class MainGUI extends javax.swing.JFrame
         AvMoney1 = new javax.swing.JTextField();
         DaysLeft1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        AmphAmount = new javax.swing.JTextField();
-        AcidAmount = new javax.swing.JTextField();
-        CrystalAmount = new javax.swing.JTextField();
-        AngelAmount = new javax.swing.JTextField();
-        MushAmount = new javax.swing.JTextField();
+        AmphGua = new javax.swing.JTextField();
+        AcidGua = new javax.swing.JTextField();
+        CrystalGua = new javax.swing.JTextField();
+        AngelGua = new javax.swing.JTextField();
+        MushGua = new javax.swing.JTextField();
         Available = new javax.swing.JLabel();
-        HashAmount = new javax.swing.JTextField();
+        HashGua = new javax.swing.JTextField();
         Amount = new javax.swing.JLabel();
         Price = new javax.swing.JLabel();
         PriceTotal = new javax.swing.JLabel();
-        HeroinAmount = new javax.swing.JTextField();
+        HeroinGua = new javax.swing.JTextField();
         Buy = new javax.swing.JButton();
         Travel2 = new javax.swing.JButton();
-        KokainAmount = new javax.swing.JTextField();
-        WeedAmount = new javax.swing.JTextField();
+        KokainGua = new javax.swing.JTextField();
+        WeedGua = new javax.swing.JTextField();
         Kokain = new javax.swing.JTextField();
         HeroinAva = new javax.swing.JTextField();
         Heroin = new javax.swing.JTextField();
@@ -140,7 +140,7 @@ public class MainGUI extends javax.swing.JFrame
         Valium = new javax.swing.JTextField();
         ValiumAv = new javax.swing.JTextField();
         ValiumPrice = new javax.swing.JTextField();
-        ValiumAmount = new javax.swing.JTextField();
+        ValiumGua = new javax.swing.JTextField();
         UserName = new javax.swing.JTextField();
         AvMoney = new javax.swing.JTextField();
         DaysLeft = new javax.swing.JTextField();
@@ -670,25 +670,25 @@ public class MainGUI extends javax.swing.JFrame
 
         jTabbedPane1.addTab("tab2", jPanel3);
 
-        AmphAmount.setText("5");
+        AmphGua.setText("5");
 
-        AcidAmount.setText("5");
+        AcidGua.setText("5");
 
-        CrystalAmount.setText("5");
+        CrystalGua.setText("5");
 
-        AngelAmount.setText("5");
+        AngelGua.setText("5");
 
-        MushAmount.setText("5");
+        MushGua.setText("5");
 
         Available.setText("Available");
 
-        HashAmount.setText("5");
+        HashGua.setText("5");
 
-        Amount.setText("Amount of packages:");
+        Amount.setText("Guantity of packages:");
 
         Price.setText("Price pr. pack");
 
-        PriceTotal.setText("Prices total:");
+        PriceTotal.setText("Total price:");
 
         Buy.setText("buy");
 
@@ -701,15 +701,15 @@ public class MainGUI extends javax.swing.JFrame
             }
         });
 
-        KokainAmount.addActionListener(new java.awt.event.ActionListener()
+        KokainGua.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                KokainAmountActionPerformed(evt);
+                KokainGuaActionPerformed(evt);
             }
         });
 
-        WeedAmount.setText("5");
+        WeedGua.setText("5");
 
         Kokain.setText("Cocain");
         Kokain.setEnabled(false);
@@ -858,7 +858,7 @@ public class MainGUI extends javax.swing.JFrame
         ValiumPrice.setText("Price pr. pack");
         ValiumPrice.setEnabled(false);
 
-        ValiumAmount.setText("5");
+        ValiumGua.setText("5");
 
         UserName.setText("UserName");
         UserName.setEnabled(false);
@@ -940,11 +940,11 @@ public class MainGUI extends javax.swing.JFrame
                                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                     .addComponent(Travel2)
                                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(HashAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(CrystalAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(WeedAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(MushAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(ValiumAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(HashGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(CrystalGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(WeedGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(MushGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(ValiumGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                 .addGap(26, 26, 26))))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -952,15 +952,15 @@ public class MainGUI extends javax.swing.JFrame
                                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(KokainAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(HeroinAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(KokainGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(HeroinGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(AcidAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(AmphAmount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(AcidGua, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(AmphGua, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                 .addGroup(jPanel2Layout.createSequentialGroup()
                                                     .addComponent(AngelPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addGap(94, 94, 94)
-                                                    .addComponent(AngelAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(AngelGua, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addComponent(WeedPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(MushPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -985,15 +985,15 @@ public class MainGUI extends javax.swing.JFrame
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(KokainAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(KokainGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Kokain, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(KokainAva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(KokainPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(HeroinAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(HeroinGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Heroin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(AmphAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AmphGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Amphetamine, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AmphAv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AmphPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1002,7 +1002,7 @@ public class MainGUI extends javax.swing.JFrame
                             .addComponent(Acid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AcidAv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AcidPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(AcidAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(AcidGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1031,11 +1031,11 @@ public class MainGUI extends javax.swing.JFrame
                                 .addComponent(HashAv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(HashPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(AngelAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(AngelGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CrystalAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CrystalGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(HashAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(HashGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
@@ -1059,11 +1059,11 @@ public class MainGUI extends javax.swing.JFrame
                             .addComponent(ValiumPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(WeedAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(WeedGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(MushAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MushGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ValiumAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ValiumGua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(PriceTotal)
@@ -1106,7 +1106,19 @@ public class MainGUI extends javax.swing.JFrame
        WeedAv.setText(changeInterface.calculateAvailability(Weed.getText()) + "");
        MushAv.setText(changeInterface.calculateAvailability(Mushrooms.getText()) + "");
        ValiumAv.setText(changeInterface.calculateAvailability(Valium.getText()) + "");
-       changeInterface.travel();
+       KokainPrice.setText(changeInterface.CalculateFinalPrice(Kokain.getText()) + "");
+       HeroinPrice.setText(changeInterface.CalculateFinalPrice(Heroin.getText()) + "");
+       AmphPrice.setText(changeInterface.CalculateFinalPrice(Amphetamine.getText()) + "");
+       AcidPrice.setText(changeInterface.CalculateFinalPrice(Acid.getText()) + "");
+       AngelPrice.setText(changeInterface.CalculateFinalPrice(AngelDust.getText()) + "");
+       CrystalPrice.setText(changeInterface.CalculateFinalPrice(CrystalMeth.getText()) + "");
+       HashPrice.setText(changeInterface.CalculateFinalPrice(Hash.getText()) + "");
+       WeedPrice.setText(changeInterface.CalculateFinalPrice(Weed.getText()) + "");
+       MushPrice.setText(changeInterface.CalculateFinalPrice(Mushrooms.getText()) + "");
+       ValiumPrice.setText(changeInterface.CalculateFinalPrice(Valium.getText()) + "");
+       
+       
+       changeInterface.travel(Username, AvMoney.getText();
        Username.setText(enterusername.getText());
     }//GEN-LAST:event_TravelActionPerformed
 
@@ -1166,10 +1178,10 @@ public class MainGUI extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_KokainActionPerformed
 
-    private void KokainAmountActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_KokainAmountActionPerformed
-    {//GEN-HEADEREND:event_KokainAmountActionPerformed
+    private void KokainGuaActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_KokainGuaActionPerformed
+    {//GEN-HEADEREND:event_KokainGuaActionPerformed
 
-    }//GEN-LAST:event_KokainAmountActionPerformed
+    }//GEN-LAST:event_KokainGuaActionPerformed
 
     private void Travel2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_Travel2ActionPerformed
     {//GEN-HEADEREND:event_Travel2ActionPerformed
@@ -1275,28 +1287,28 @@ public class MainGUI extends javax.swing.JFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Acid;
     private javax.swing.JTextField Acid1;
-    private javax.swing.JTextField AcidAmount;
     private javax.swing.JTextField AcidAmount1;
     private javax.swing.JTextField AcidAv;
     private javax.swing.JTextField AcidAv1;
+    private javax.swing.JTextField AcidGua;
     private javax.swing.JTextField AcidPrice;
     private javax.swing.JTextField AcidPrice1;
     private javax.swing.JLabel Amount;
     private javax.swing.JLabel Amount1;
-    private javax.swing.JTextField AmphAmount;
     private javax.swing.JTextField AmphAmount1;
     private javax.swing.JTextField AmphAv;
     private javax.swing.JTextField AmphAv1;
+    private javax.swing.JTextField AmphGua;
     private javax.swing.JTextField AmphPrice;
     private javax.swing.JTextField AmphPrice1;
     private javax.swing.JTextField Amphetamine;
     private javax.swing.JTextField Amphetamine1;
-    private javax.swing.JTextField AngelAmount;
     private javax.swing.JTextField AngelAmount1;
     private javax.swing.JTextField AngelAv;
     private javax.swing.JTextField AngelAv1;
     private javax.swing.JTextField AngelDust;
     private javax.swing.JTextField AngelDust1;
+    private javax.swing.JTextField AngelGua;
     private javax.swing.JTextField AngelPrice;
     private javax.swing.JTextField AngelPrice1;
     private javax.swing.JTextField AvMoney;
@@ -1304,10 +1316,10 @@ public class MainGUI extends javax.swing.JFrame
     private javax.swing.JLabel Available;
     private javax.swing.JLabel Available1;
     private javax.swing.JButton Buy;
-    private javax.swing.JTextField CrystalAmount;
     private javax.swing.JTextField CrystalAmount1;
     private javax.swing.JTextField CrystalAv;
     private javax.swing.JTextField CrystalAv1;
+    private javax.swing.JTextField CrystalGua;
     private javax.swing.JTextField CrystalMeth;
     private javax.swing.JTextField CrystalMeth1;
     private javax.swing.JTextField CrystalPrice;
@@ -1316,33 +1328,33 @@ public class MainGUI extends javax.swing.JFrame
     private javax.swing.JTextField DaysLeft1;
     private javax.swing.JTextField Hash;
     private javax.swing.JTextField Hash1;
-    private javax.swing.JTextField HashAmount;
     private javax.swing.JTextField HashAmount1;
     private javax.swing.JTextField HashAv;
     private javax.swing.JTextField HashAv1;
+    private javax.swing.JTextField HashGua;
     private javax.swing.JTextField HashPrice;
     private javax.swing.JTextField HashPrice1;
     private javax.swing.JTextField Heroin;
     private javax.swing.JTextField Heroin1;
-    private javax.swing.JTextField HeroinAmount;
     private javax.swing.JTextField HeroinAmount1;
     private javax.swing.JTextField HeroinAva;
     private javax.swing.JTextField HeroinAva1;
+    private javax.swing.JTextField HeroinGua;
     private javax.swing.JTextField HeroinPrice;
     private javax.swing.JTextField HeroinPrice1;
     private javax.swing.JTextField Kokain;
     private javax.swing.JTextField Kokain1;
-    private javax.swing.JTextField KokainAmount;
     private javax.swing.JTextField KokainAmount1;
     private javax.swing.JTextField KokainAva;
     private javax.swing.JTextField KokainAva1;
+    private javax.swing.JTextField KokainGua;
     private javax.swing.JTextField KokainPrice;
     private javax.swing.JTextField KokainPrice1;
     private javax.swing.JTextField MoneyScore;
-    private javax.swing.JTextField MushAmount;
     private javax.swing.JTextField MushAmount1;
     private javax.swing.JTextField MushAv;
     private javax.swing.JTextField MushAv1;
+    private javax.swing.JTextField MushGua;
     private javax.swing.JTextField MushPrice;
     private javax.swing.JTextField MushPrice1;
     private javax.swing.JTextField Mushrooms;
@@ -1362,18 +1374,18 @@ public class MainGUI extends javax.swing.JFrame
     private javax.swing.JTextField Username;
     private javax.swing.JTextField Valium;
     private javax.swing.JTextField Valium1;
-    private javax.swing.JTextField ValiumAmount;
     private javax.swing.JTextField ValiumAmount1;
     private javax.swing.JTextField ValiumAv;
     private javax.swing.JTextField ValiumAv1;
+    private javax.swing.JTextField ValiumGua;
     private javax.swing.JTextField ValiumPrice;
     private javax.swing.JTextField ValiumPrice1;
     private javax.swing.JTextField Weed;
     private javax.swing.JTextField Weed1;
-    private javax.swing.JTextField WeedAmount;
     private javax.swing.JTextField WeedAmount1;
     private javax.swing.JTextField WeedAv;
     private javax.swing.JTextField WeedAv1;
+    private javax.swing.JTextField WeedGua;
     private javax.swing.JTextField WeedPrice;
     private javax.swing.JTextField WeedPrice1;
     private javax.swing.JTextField enterusername;
