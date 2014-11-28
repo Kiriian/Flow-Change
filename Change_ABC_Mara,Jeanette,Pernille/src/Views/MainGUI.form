@@ -88,10 +88,10 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Travel" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="228" max="32767" attributes="0"/>
+                      <EmptySpace pref="281" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -107,13 +107,13 @@
                           <Component id="Username" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="348" max="32767" attributes="0"/>
+                      <EmptySpace pref="374" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="enterusername" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="Travel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -135,12 +135,12 @@
                 <Property name="text" type="java.lang.String" value="Money = score:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="Travel">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Travel"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TravelActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
@@ -179,224 +179,603 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="686" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="739" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField2" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField3" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="544" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="570" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="144" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="jButton2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Sell"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Price pr. pack"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel15">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="500"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="available"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Available"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Prices total:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Availiable Money:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="5"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Selling amount of packages of Kokain:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel6">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Kokain:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel9">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Days left:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel16">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Selling amount of packages of Heroin:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Price pr. pack"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="10"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Travel"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel12">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="available"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Price pr. pack"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel18">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="UserName"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel19">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Heroin:"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="PriceTotal1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="TotalField1" min="-2" pref="210" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="UserName1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="AvMoney1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+                                          <Component id="DaysLeft1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="Kokain1" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                      <Component id="Heroin1" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                      <Component id="Amphetamine1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Acid1" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                      <Component id="CrystalMeth1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AngelDust1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="Available1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="KokainAva1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="HeroinAva1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AmphAv1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AcidAv1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="CrystalAv1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AngelAv1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="Valium1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Hash1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Mushrooms1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Weed1" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="HashAv1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="WeedAv1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="MushAv1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="ValiumAv1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="CrystalPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AcidPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="AmphPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="HeroinPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="Price1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="KokainPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                                          <Component id="Amount1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Group type="103" groupAlignment="1" attributes="0">
+                                                              <Component id="Travel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                                  <Component id="HashAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="CrystalAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="WeedAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="MushAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="ValiumAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="HashPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                          <Group type="103" alignment="1" groupAlignment="1" attributes="0">
+                                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                                  <Component id="KokainAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="HeroinAmount1" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                                  <Component id="AcidAmount1" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                                  <Component id="AmphAmount1" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Component id="AngelPrice1" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                                                              <Component id="AngelAmount1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Component id="WeedPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="MushPrice1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                              <Component id="Sell" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="ValiumPrice1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="UserName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="AvMoney1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DaysLeft1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Available1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Price1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Amount1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="KokainAmount1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Kokain1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="KokainAva1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="KokainPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="HeroinAmount1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Heroin1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="AmphAmount1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Amphetamine1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AmphAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AmphPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Acid1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AcidAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AcidPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="AcidAmount1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="HeroinAva1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HeroinPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="AngelAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="AngelPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="CrystalAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="CrystalPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="AngelDust1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="CrystalMeth1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Hash1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="HashAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="HashPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="AngelAmount1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="CrystalAmount1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="HashAmount1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <Component id="Weed1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Mushrooms1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Valium1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="WeedAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="WeedPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="MushAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="MushPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="ValiumAv1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ValiumPrice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <Component id="WeedAmount1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="MushAmount1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ValiumAmount1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="65" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="PriceTotal1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Sell" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Travel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="TotalField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JTextField" name="AmphAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AcidAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CrystalAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AngelAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MushAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Available1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HashAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Amount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Amount of packages:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Price1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="PriceTotal1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Prices total:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HeroinAmount1">
+                </Component>
+                <Component class="javax.swing.JButton" name="Sell">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="sell"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="Travel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Travel"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Travel1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="KokainAmount1">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KokainAmount1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="WeedAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Kokain1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cocain"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Kokain1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HeroinAva1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HeroinAva1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Heroin1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Heroin"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Heroin1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Amphetamine1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Amphetamine"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Amphetamine1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Acid1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Acid"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Acid1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="TotalField1">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TotalField1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="KokainAva1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KokainAva1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Hash1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Hash"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Hash1ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Mushrooms1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Mushrooms"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Weed1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Weed"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CrystalMeth1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crystal Meth"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AngelDust1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Angel Dust"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AmphAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AcidAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HashAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MushAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="WeedAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CrystalAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AngelAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="KokainPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HeroinPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AmphPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AcidPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="HashPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="MushPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="WeedPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="CrystalPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AngelPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Valium1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Valium"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="ValiumAv1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Available"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="ValiumPrice1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Price pr. pack"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="ValiumAmount1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="5"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="UserName1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UserName"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="AvMoney1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Availiable Money:"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="DaysLeft1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Days left:"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel2">
@@ -417,12 +796,8 @@
                           <Group type="102" attributes="0">
                               <Component id="PriceTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="TotalField" max="32767" attributes="0"/>
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Component id="Buy" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                              <Component id="Travel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="TotalField" min="-2" pref="210" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -432,7 +807,7 @@
                                       <Component id="AvMoney" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
                                       <Component id="DaysLeft" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="69" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -452,29 +827,30 @@
                                                   <Component id="HeroinAva" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="AmphAv" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="AcidAv" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="WeedAv" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="CrystalAv" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="ValiumAv" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="AngelAv" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="HashAv" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <Component id="Valium" min="-2" max="-2" attributes="0"/>
-                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                              <Component id="Hash" min="-2" max="-2" attributes="0"/>
-                                              <Component id="Weed" min="-2" max="-2" attributes="0"/>
-                                          </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="Mushrooms" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="Valium" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Hash" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Mushrooms" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Weed" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
+                                              </Group>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="MushAv" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="HashAv" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="WeedAv" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="MushAv" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="ValiumAv" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="ValiumPrice" min="-2" max="-2" attributes="0"/>
                                                   <Component id="CrystalPrice" min="-2" max="-2" attributes="0"/>
                                                   <Component id="AcidPrice" min="-2" max="-2" attributes="0"/>
                                                   <Component id="AmphPrice" min="-2" max="-2" attributes="0"/>
@@ -489,22 +865,25 @@
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
                                                       <EmptySpace max="32767" attributes="0"/>
-                                                      <Component id="CrystalAmount" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="Travel2" min="-2" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="HashAmount" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="CrystalAmount" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="WeedAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="MushAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                              <Component id="ValiumAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
                                                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="WeedPrice" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="32767" attributes="0"/>
-                                                      <Component id="WeedAmount" min="-2" pref="52" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="AngelPrice" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="HashPrice" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="103" alignment="1" groupAlignment="1" attributes="0">
                                                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                                               <Component id="KokainAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
                                                               <Component id="HeroinAmount" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
@@ -512,24 +891,18 @@
                                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                                               <Component id="AcidAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
                                                               <Component id="AmphAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
-                                                              <Component id="AngelAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
                                                           </Group>
-                                                          <Component id="ValiumAmount" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
                                                       </Group>
-                                                  </Group>
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Group type="102" attributes="0">
-                                                              <Component id="MushPrice" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace max="32767" attributes="0"/>
-                                                              <Component id="MushAmount" min="-2" pref="52" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <Group type="102" alignment="1" attributes="0">
-                                                              <Component id="HashPrice" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace max="32767" attributes="0"/>
-                                                              <Component id="HashAmount" min="-2" pref="52" max="-2" attributes="0"/>
-                                                          </Group>
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="AngelPrice" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                                                          <Component id="AngelAmount" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Component id="WeedPrice" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="MushPrice" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                          <Component id="Buy" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="ValiumPrice" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
@@ -593,79 +966,84 @@
                               </Group>
                           </Group>
                       </Group>
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace pref="18" max="32767" attributes="0"/>
-                                      <Component id="AngelAmount" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                              <Component id="AngelDust" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                              <Component id="AngelAv" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="AngelAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="AngelPrice" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="CrystalAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="CrystalPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="AngelDust" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="CrystalMeth" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="CrystalMeth" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="CrystalAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Hash" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="HashAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HashPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="Hash" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="HashAv" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="HashPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="HashAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="AngelPrice" min="-2" max="-2" attributes="0"/>
+                              <Component id="AngelAmount" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="CrystalAmount" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="HashAmount" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="Weed" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Mushrooms" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Valium" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="WeedAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="WeedPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="CrystalPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="CrystalAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MushAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MushPrice" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ValiumAv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ValiumPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="WeedAmount" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="MushAmount" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="ValiumAmount" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Weed" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="WeedAv" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="WeedPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="WeedAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Mushrooms" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="MushAv" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="MushPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="MushAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Valium" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="ValiumAv" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="ValiumPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="ValiumAmount" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="50" max="32767" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="PriceTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Buy" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Travel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Travel2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="TotalField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
@@ -731,12 +1109,12 @@
                 <Property name="text" type="java.lang.String" value="buy"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="Travel">
+            <Component class="javax.swing.JButton" name="Travel2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Travel"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TravelActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Travel2ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="KokainAmount">
