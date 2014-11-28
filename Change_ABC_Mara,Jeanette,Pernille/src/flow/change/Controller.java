@@ -122,6 +122,8 @@ public class Controller implements ChangeInterface
     @Override
     public int getBasePrice(String drugName)
     {
+        drugArray = FileHandler.loadDrugs("Drugs.txt");
+        
         for (Drugs i : drugArray)
         {
             if (drugName.equals(i.getDrugName()))
@@ -159,6 +161,8 @@ public class Controller implements ChangeInterface
     @Override
     public int getBaseAvailiablity(String drugName)
     {
+        drugArray = FileHandler.loadDrugs("Drugs.txt");
+        
         for (Drugs i : drugArray)
         {
             if (drugName.equals(i.getDrugName()))
