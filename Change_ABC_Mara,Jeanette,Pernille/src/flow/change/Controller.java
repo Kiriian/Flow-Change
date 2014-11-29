@@ -38,7 +38,7 @@ public class Controller implements ChangeInterface
     @Override
     public void buyDrugs()
     {
-        
+
     }
 
     @Override
@@ -148,7 +148,7 @@ public class Controller implements ChangeInterface
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
 //            endPrice =finalPrice * factor;
-            System.out.println("endPrice"+endPrice);
+            System.out.println("endPrice" + endPrice);
             return finalPrice;
         } else
         {
@@ -156,7 +156,7 @@ public class Controller implements ChangeInterface
             finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
 //            endPrice =finalPrice * factor;
-            System.out.println("endPrice"+endPrice);
+            System.out.println("endPrice" + endPrice);
             return finalPrice;
         }
     }
@@ -189,25 +189,31 @@ public class Controller implements ChangeInterface
 
     // beregner faktor til at gange på prisen. Faktor 10 hvis goldennumber er i in range.
     @Override
-    public int goldenNumberFactor()
+    public int goldenNumberFactor(String drugName)
     {
-//        Random rand = new Random ();
-//        int chance = rand.nextInt(100);
-//        if (chance<= i.getGoldenNumber())//virker ikke - finder ikke det valgte drugs golden number
-//        {
-//            if (chance%2==0)
-//            { 
-//                factor = 10;
-//            }
-//            else
-//            {
-//                factor = 1;
-//            }     
-//        }else
-//        {
-//            factor = 1;
-//        }
-        return 1;
+        Random rand = new Random();
+        int chance = rand.nextInt(100);
+        for (Drugs i : drugArray)
+        {
+            if (drugName.equals(i.getDrugName()))
+            {
+                if (chance <= i.getGoldenNumber())//virker ikke - finder ikke det valgte drugs golden number
+                {
+                    if (chance % 2 == 0)
+                    {
+                        factor = 10;
+                    } else
+                    {
+                        factor = 1;
+                    }
+                } else
+                {
+                    factor = 1;
+                }
+                return 1;
+            }
+        }
+        return 0;
     }
 
 }

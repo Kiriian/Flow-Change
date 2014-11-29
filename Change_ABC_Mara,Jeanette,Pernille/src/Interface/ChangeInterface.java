@@ -40,5 +40,5 @@ public interface ChangeInterface
     boolean save(String filename);
     
     // metoden modtager final price og beregner om prisen skal modificeres
-    int goldenNumberFactor();
+    int goldenNumberFactor(String drugName);
 }
