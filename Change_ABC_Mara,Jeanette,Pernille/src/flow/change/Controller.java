@@ -32,13 +32,40 @@ public class Controller implements ChangeInterface
     private int finalAvailability;
     private int days;
     private int factor;
-    Drugs i;
+    private Drugs i;
+
     private int endPrice;
 
     @Override
-    public void buyDrugs()
+    public int buyDrugs(String username, String drugName, int amount)
     {
+        userArray = FileHandler.loadPerson(".txt");
+        for (Person p : userArray)
+        {
+            if (username.equals(p.getUsername()))
+            {
+                if (p.getScore() >= finalPrice)
+                {
+                    p.setScore(p.getScore() - finalPrice);
+                    for (Drugs i : drugArray)
+                    {
+                        if (drugName.equals(i.getDrugName()))
 
+                        {
+                            i.setBaseAvailability(amount);
+                            yourDrugs.add(i);
+                            return p.getScore();
+                        }
+
+                    }
+                } else
+                {
+                    return p.getScore();
+                }
+
+            }
+        }
+        return 0;
     }
 
     @Override
@@ -214,6 +241,20 @@ public class Controller implements ChangeInterface
             }
         }
         return 0;
+    }
+
+    @Override
+    public int endPrice(String drugName, int amount)
+    {
+        for (Drugs i : drugArray)
+        {
+            if (drugName.equals(i.getDrugName()))
+            {
+                endPrice = finalPrice * amount;
+            }
+        }
+
+        return endPrice;
     }
 
 }

@@ -28,7 +28,7 @@ public interface ChangeInterface
     int getBaseAvailiablity(String drugName);
     
     //her bliver total prisen udregnet og trukket fra persones konto
-    void buyDrugs();
+    int buyDrugs(String username, String drugName, int amount);
     
     //her bliver total prisen udregnet og tilføjet til persones konto
     int sellDrugs(String drugName);
@@ -38,6 +38,8 @@ public interface ChangeInterface
     
     // 
     boolean save(String filename);
+    
+    int endPrice(String drugName, int amount);
     
     // metoden modtager final price og beregner om prisen skal modificeres
     int goldenNumberFactor(String drugName);
