@@ -5,6 +5,8 @@
  */
 package Model;
 
+import flow.change.Controller;
+
 /**
  *
  * @author Jeanette
@@ -15,12 +17,11 @@ public class Person
     private int score;
     private String username;
 
-    public Person(String username, int score)
+    public Person(String username)
     {
-        this.score = score;
+        this.score = 5000;
         this.username = username;
     }
-    //bør vi ikke sidestille cash med point - har allerede gjort det i guien...
 
     public int getScore()
     {
@@ -42,6 +43,13 @@ public class Person
         this.username = username;
     }
 
+    public int keepScore(int quantity)
+    {
+        score = score + Controller.endPrice(quantity);
+        
+        return score;
+    }
+    
     @Override
     public String toString()
     {

@@ -44,6 +44,11 @@ public class ChangeGUI extends javax.swing.JFrame
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jSeparator3 = new javax.swing.JSeparator();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
@@ -107,19 +112,47 @@ public class ChangeGUI extends javax.swing.JFrame
             }
         });
 
+        jTextField15.setText("score");
+
+        jTextField16.setText("Days left");
+
+        jTextField17.setText("Country");
+
+        jTextField18.setText("username");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(jButton3)
-                .addContainerGap(272, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(jButton3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(102, 102, 102)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
                 .addComponent(jButton3)
                 .addContainerGap(171, Short.MAX_VALUE))
         );
@@ -418,9 +451,9 @@ public class ChangeGUI extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jButton1ActionPerformed
         Drugs drugName = drugArray.get(jList1.getSelectedIndex());
         
-//        jTextField1.setText(changeInterface.calculateAvailability(drugName.getDrugName())+"");
-//        jTextField2.setText(changeInterface.CalculateFinalPrice(drugName.getDrugName
-          jTextField3.setText(changeInterface.endPrice(drugName.getDrugName(), Integer.parseInt(quantity.getText()))+"");
+//        jTextField1.setText(changeInterface.calculateAvailability(drug.getDrugName())+"");
+//        jTextField2.setText(changeInterface.CalculateFinalPrice(drug.getDrugName
+          jTextField3.setText(changeInterface.endPrice(Integer.parseInt(quantity.getText()))+"");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton3ActionPerformed
@@ -435,21 +468,23 @@ public class ChangeGUI extends javax.swing.JFrame
             listModel.addElement(drugArray.get(i));
         }
         jList1.setModel(listModel);
+        changeInterface.addPerson(jTextField18.getText());
+        jTextField11.setText(jTextField18.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        Drugs drugName = drugArray.get(jList1.getSelectedIndex());
+        Drugs drug = drugArray.get(jList1.getSelectedIndex());
         
-        changeInterface.buyDrugs(jTextField11.getText(), drugName.getDrugName(), Integer.parseInt(quantity.getText()));
+        changeInterface.buyDrugs(drug, Integer.parseInt(quantity.getText()));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jList1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jList1MouseClicked
     {//GEN-HEADEREND:event_jList1MouseClicked
-        Drugs drugName = drugArray.get(jList1.getSelectedIndex());
+        Drugs drug = drugArray.get(jList1.getSelectedIndex());
         
-        jTextField1.setText(changeInterface.calculateAvailability(drugName.getDrugName())+"");
-        jTextField2.setText(changeInterface.CalculateFinalPrice(drugName.getDrugName())+"");
+        jTextField1.setText(changeInterface.calculateAvailability(drug.getDrugName())+"");
+        jTextField2.setText(changeInterface.CalculateFinalPrice(drug.getDrugName())+"");
     }//GEN-LAST:event_jList1MouseClicked
 
     private void jList2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jList2MouseClicked
@@ -540,6 +575,7 @@ public class ChangeGUI extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
@@ -547,6 +583,10 @@ public class ChangeGUI extends javax.swing.JFrame
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

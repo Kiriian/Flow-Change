@@ -23,7 +23,6 @@ public class Controller implements ChangeInterface
     private ArrayList<Drugs> drugArray = new ArrayList<>();
     private ArrayList<Person> userArray = new ArrayList<>();
     private ArrayList<Drugs> yourDrugs = new ArrayList<>();
-    private String drugName;
     private int adjust;
     private int adjustAva;
     private int middelSum;
@@ -33,38 +32,30 @@ public class Controller implements ChangeInterface
     private int days;
     private int factor;
     private Drugs i;
-
+    private Person p;
     private int endPrice;
 
     @Override
-    public int buyDrugs(String username, String drugName, int quantity)
+    public void buyDrugs(Drugs drug, int quantity)
     {
-        userArray = FileHandler.loadPerson(".txt");
-        for (Person p : userArray)
+        if (!yourDrugs.isEmpty())
         {
-            if (username.equals(p.getUsername()))
+            for (Drugs i : yourDrugs)
             {
-                if (p.getScore() >= finalPrice)
+                if (drug.getDrugName().equals(i.getDrugName()))
                 {
-                    p.setScore(p.getScore() - finalPrice);
-                    for (Drugs i : drugArray)
-                    {
-                        if (drugName.equals(i.getDrugName()))
-
-                        {
-                            i.setBaseAvailability(quantity);
-                            yourDrugs.add(i);
-                            return p.getScore();
-                        }
-
-                    }
-                } else
-                {
-                    return p.getScore();
+                    i.setBaseAvailability(i.getBaseAvailability() + quantity);
+                    System.out.println(yourDrugs.toString() + "fisk");
+                    break;
                 }
             }
+        } else
+        {
+            System.out.println(i);
+            drug.setBaseAvailability(quantity);
+            yourDrugs.add(drug);
+            System.out.println(yourDrugs.toString() + "hello");
         }
-        return 0;
     }
 
     @Override
@@ -138,7 +129,7 @@ public class Controller implements ChangeInterface
     {
         if (days == 20)
         {
-            addPerson(username, score);
+            addPerson(username);
             return days;
         } else
         {
@@ -173,7 +164,7 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
-            finalPrice = finalPrice*goldenNumberFactor(drugName);
+            finalPrice = finalPrice * goldenNumberFactor(drugName);
             System.out.println("endPrice" + finalPrice);
             return finalPrice;
         } else
@@ -181,7 +172,7 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
-            finalPrice = finalPrice*goldenNumberFactor(drugName);
+            finalPrice = finalPrice * goldenNumberFactor(drugName);
             System.out.println("endPrice" + finalPrice);
             return finalPrice;
         }
@@ -206,11 +197,10 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public void addPerson(String userName, int score)
+    public void addPerson(String userName)
     {
-        userArray.add(new Person(userName, score));
+        userArray.add(new Person(userName));
 
-        FileHandler.save(userArray, "highscore.txt");
     }
 
     // beregner faktor til at gange på prisen. Faktor 10 hvis goldennumber er i in range.
@@ -246,15 +236,9 @@ public class Controller implements ChangeInterface
     }
 
     @Override
-    public int endPrice(String drugName, int amount)
+    public int endPrice(int quantity)
     {
-        for (Drugs i : drugArray)
-        {
-            if (drugName.equals(i.getDrugName()))
-            {
-                endPrice = finalPrice * amount;
-            }
-        }
+        endPrice = finalPrice * quantity;
 
         return endPrice;
     }
