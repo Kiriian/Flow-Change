@@ -28,7 +28,7 @@ public interface ChangeInterface
     int getBaseAvailiablity(String drugName);
     
     //her bliver total prisen udregnet og trukket fra persones konto
-    int buyDrugs(String username, String drugName, int amount);
+    int buyDrugs(String username, String drugName, int quantity);
     
     //her bliver total prisen udregnet og tilføjet til persones konto
     int sellDrugs(String drugName);

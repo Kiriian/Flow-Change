@@ -37,7 +37,7 @@ public class Controller implements ChangeInterface
     private int endPrice;
 
     @Override
-    public int buyDrugs(String username, String drugName, int amount)
+    public int buyDrugs(String username, String drugName, int quantity)
     {
         userArray = FileHandler.loadPerson(".txt");
         for (Person p : userArray)
@@ -52,7 +52,7 @@ public class Controller implements ChangeInterface
                         if (drugName.equals(i.getDrugName()))
 
                         {
-                            i.setBaseAvailability(amount);
+                            i.setBaseAvailability(quantity);
                             yourDrugs.add(i);
                             return p.getScore();
                         }
@@ -62,7 +62,6 @@ public class Controller implements ChangeInterface
                 {
                     return p.getScore();
                 }
-
             }
         }
         return 0;
@@ -174,16 +173,16 @@ public class Controller implements ChangeInterface
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) - middelSum;
             System.out.println("Price" + finalPrice);
-//            endPrice =finalPrice * factor;
-            System.out.println("endPrice" + endPrice);
+            finalPrice = finalPrice*goldenNumberFactor(drugName);
+            System.out.println("endPrice" + finalPrice);
             return finalPrice;
         } else
         {
             middelSum = ((adjust * getBasePrice(drugName)) / 100);
             finalPrice = getBasePrice(drugName) + middelSum;
             System.out.println("Price" + finalPrice);
-//            endPrice =finalPrice * factor;
-            System.out.println("endPrice" + endPrice);
+            finalPrice = finalPrice*goldenNumberFactor(drugName);
+            System.out.println("endPrice" + finalPrice);
             return finalPrice;
         }
     }
@@ -220,6 +219,7 @@ public class Controller implements ChangeInterface
     {
         Random rand = new Random();
         int chance = rand.nextInt(100);
+        System.out.println(chance);
         for (Drugs i : drugArray)
         {
             if (drugName.equals(i.getDrugName()))
@@ -229,15 +229,17 @@ public class Controller implements ChangeInterface
                     if (chance % 2 == 0)
                     {
                         factor = 10;
+                        return factor;
                     } else
                     {
                         factor = 1;
+                        return factor;
                     }
                 } else
                 {
                     factor = 1;
+                    return factor;
                 }
-                return 1;
             }
         }
         return 0;

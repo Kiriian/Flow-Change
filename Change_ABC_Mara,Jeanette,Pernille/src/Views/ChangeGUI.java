@@ -439,7 +439,9 @@ public class ChangeGUI extends javax.swing.JFrame
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-      
+        Drugs drugName = drugArray.get(jList1.getSelectedIndex());
+        
+        changeInterface.buyDrugs(jTextField11.getText(), drugName.getDrugName(), Integer.parseInt(quantity.getText()));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jList1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jList1MouseClicked
